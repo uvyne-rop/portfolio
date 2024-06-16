@@ -1,20 +1,21 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import { BrowserRouter as Router, Route, Routes,} from 'react-router-dom'
+
+import Hero from '../src/components/Hero';
+import Menu from '../src/components/Menu';
+import Header from '../src/components/Header';
 import "tailwindcss/tailwind.css";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-    </div>
+    
+    <Router>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/Menu" element={<Menu />} />
+      </Routes>
+    </Router>
   );
 };
 
