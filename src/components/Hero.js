@@ -23,19 +23,27 @@ const Hero = () => {
     setIsVisible(true);
   }, []);
 
+  const handleScrollToAbout = () => {
+    const aboutSection = document.getElementById(' About');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({behavior: 'smooth'});
+
+    }
+  }
+
   
   return (
     <section >
-      <div id="home" className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
-      <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0 bg-black">
-        <source src="https://mazwai.com/videvo_files/video/free/2016-11/small_watermarked/Smoke_Dark_08_Videvo_preview.webm" type="video/webm" />
+      <div id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+      <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0 bg-red-400 ">
+        <source src="https://media.gettyimages.com/id/1361637396/video/close-up-and-slow-motion-of-orange-pink-and-yellow-inks-splashing-and-interacting-in-water.mp4?s=mp4-640x640-gi&k=20&c=00k_OF8nnezqVT-jf9FTZtbK0Ar650oj2xYmCWnXBlE=" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black opacity-50 z-1"></div>
+      <div className="absolute inset-0  bg-red-400 opacity-50 z-1"></div>
       <div className={`relative z-10 text-center text-white transition-all duration-700 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
         <h1 className={`text-5xl font-bold ${textColor}`}>Hello, I'm Uvyne Rop</h1>
         <p className={`mt-4 text-gray-300 ${textColor}`}>A Passionate Fullstack Developer</p>
-        <a href="#about" className="mt-6 mr-4 inline-block bg-purple-800 text-white px-6 py-3 rounded">Learn More</a>
-        <a href="#Menu" className="mt-6 ml-2 inline-block bg-purple-800 text-white px-4 py-3 rounded">See My Projects</a> </div>
+        <button onClick = {handleScrollToAbout} className="mt-6 mr-4 inline-block bg-orange-600 text-white px-6 py-3 rounded">Learn More</button>
+        <button onClick={() => navigate('/About') } className="mt-6 ml-2 inline-block bg-orange-600 text-white px-4 py-3 rounded">See more about me ➡</button> </div>
         
         <button onClick={() => navigate('/Menu')} className= "absolute top-4 right-4 bg-purple-400 text-white p-2 rounded justify-start" aria-label="Open menu">
           <div>

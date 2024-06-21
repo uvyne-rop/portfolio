@@ -1,13 +1,34 @@
 import React from 'react';
 
+
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-800 text-center">About Me</h2>
-        <p className="mt-4 text-gray-600 text-center">
-          I am a passionate fullstack software developer with experience in building web applications using modern technologies.
-        </p>
+    <section id="about" className=" bg-cover bg-center flex h-screen w-full"
+      style={{backgroundImage: "url('https://t4.ftcdn.net/jpg/07/09/51/97/240_F_709519729_Azo28zQQG2EB0ywrmsgrT6qczk3uKUgf.jpg')"}}>
+        
+      <div className="container flex flex-col md:flex-row  px-0 mx-0 h-full w-full">
+        <div className="md:w-1/2 h-full flex flex-col justify-center px-0">
+          <h2 className="text-3xl font-bold text-blue-800 text-center md:text-left">About Me</h2>
+          <p className="mt-4 text-gray-900 text-center md:text-left">
+            I am a dedicated full-stack software developer going on with studies at Moringa School.
+            I have a deep curiosity for learning new technologies and exploring creative coding.
+            Currently, I am enrolled in training as a data analyst and pursuing a Bachelor of Science in Information Technology at Multimedia University of Kenya.
+            In my leisure time, I enjoy playing games like chess and handball, and I have a strong passion for music.
+          </p>
+          <a className="mt-20 mx-auto md:mx-0" href="https://preview.themeforest.net/item/danny-web-developer-resume-html-template/full_screen_preview/19976830?_ga=2.50994400.893354357.1718900779-261995470.1712220730">Resume ⬇</a>
+        </div>
+        <div className="md:w-1/2 h-full flex justify-end items-center  relative">
+          <div className="relative">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhIednHNZ1VBWNSlYmH8Vlgs78HNdiHHj0g&s" alt="Uvyne Rop" className="h-96 w-96 object-cover rounded-full" />
+            <div className="absolute inset-0 flex items-center justify-center z-0">
+              <div className="relative w-full h-full rounded-full border-4 border-transparent border-t-pink-500 animate-spin">
+                <span className="absolute w-full h-full flex items-center justify-center text-pink-900 font-bold text-xl writing-mode-vertical-lr text-orientation-upright transform rotate-45">
+                  Yess💫 ✔
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -17,36 +38,3 @@ export default About;
 
 
 
-// import React, { useState, useEffect } from 'react';
-
-// const Hero = () => {
-//   const [textColor, setTextColor] = useState('text-gray-800'); // Initial text color
-
-//   useEffect(() => {
-//     // Array of possible text colors
-//     const colors = ['text-blue-600', 'text-green-600', 'text-purple-600', 'text-yellow-600', 'text-red-600'];
-//     // Generate a random index to pick a color
-//     const randomIndex = Math.floor(Math.random() * colors.length);
-//     // Set the text color using state
-//     setTextColor(colors[randomIndex]);
-//   }, []); // Empty dependency array to run only once on component mount
-
-//   return (
-//     <section id="home" className="relative h-screen flex items-center justify-center bg-gray-100 overflow-hidden">
-//       {/* Video Background */}
-//       <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
-//         <source src="https://mazwai.com/videvo_files/video/free/2016-11/small_watermarked/Smoke_Dark_08_Videvo_preview.webm" type="video/webm"/>
-//       </video>
-//       {/* Overlay to darken the video */}
-//       <div className="absolute inset-0 bg-black opacity-50 z-1"></div>
-//       {/* Content */}
-//       <div className="relative z-10 text-center text-white">
-//         <h1 className={`text-5xl font-bold ${textColor}`}>Hello, I'm Uvyne Rop</h1>
-//         <p className={`mt-4 text-gray-300 ${textColor}`}>A Passionate Fullstack Developer</p>
-//         <a href="#about" className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded">Learn More</a>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
