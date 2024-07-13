@@ -2,6 +2,7 @@
 @import'tailwind' components;
 @import'tailwind' utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+Deutschland+Grundschrift&display=swap');
 .App {
   text-align: center;
 }

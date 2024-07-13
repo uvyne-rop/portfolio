@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        grundschrift: ['Playwrite Deutschland Grundschrift', 'sans-serif'],
+      },
       keyframes: {
         glow: {
           '0%': { backgroundPosition: '0% 50%' },

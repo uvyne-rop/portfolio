@@ -1,5 +1,5 @@
 import React from 'react';
-
+import  {Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -15,7 +15,8 @@ const About = () => {
             Currently, I am enrolled in training as a data analyst and pursuing a Bachelor of Science in Information Technology at Multimedia University of Kenya.
             In my leisure time, I enjoy playing games like chess and handball, and I have a strong passion for music.
           </p>
-          <a className="mt-20 mx-auto md:mx-0" href="https://preview.themeforest.net/item/danny-web-developer-resume-html-template/full_screen_preview/19976830?_ga=2.50994400.893354357.1718900779-261995470.1712220730">Resume ⬇</a>
+          <Link to="/Resume">Resume ⬇</Link>
+          
         </div>
         <div className="md:w-1/2 h-full flex justify-end items-center  relative">
           <div className="relative">
