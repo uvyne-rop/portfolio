@@ -15,17 +15,17 @@ const About = () => {
             Currently, I am enrolled in training as a data analyst and pursuing a Bachelor of Science in Information Technology at Multimedia University of Kenya.
             In my leisure time, I enjoy playing games like chess and handball, and I have a strong passion for music.
           </p>
-          <div className="text-blue-600 pt-6 ">
-          <Link to="/Resume"><strong>view my resume here</strong> ⬇</Link>
-          </div>
+          
         </div>
         <div className="md:w-1/2 h-full flex justify-end items-center  relative">
-          <div className="relative">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhIednHNZ1VBWNSlYmH8Vlgs78HNdiHHj0g&s" alt="Uvyne Rop" className="h-96 w-96 object-cover rounded-full" />
-            <div className="absolute inset-0 flex items-center justify-center z-0">
+          <div className="absolute">
+          <div><strong>view my resume here</strong> ⬇ </div>
+            <div className=" inset-0 flex items-center justify-center z-0">
               <div className="relative w-full h-full rounded-full border-4 border-transparent border-t-pink-500 animate-spin">
-                <span className="absolute w-full h-full flex items-center justify-center text-pink-900 font-bold text-xl writing-mode-vertical-lr text-orientation-upright transform rotate-45">
-                  Yess💫 ✔
+                <span className="  w-full h-full flex items-center justify-center text-pink-900 font-bold text-xl writing-mode-vertical-lr text-orientation-upright transform rotate-1">
+                <Link to="/Resume">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhIednHNZ1VBWNSlYmH8Vlgs78HNdiHHj0g&s" alt="Uvyne Rop" className="h-96 w-96 object-cover rounded-full" />
+                </Link>
                 </span>
               </div>
             </div>

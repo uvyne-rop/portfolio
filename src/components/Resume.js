@@ -1,4 +1,5 @@
 import React from 'react';
+import uvyne from './assets/uvyne.jpg';
 
 const Resume = () => {
   return (
@@ -6,9 +7,9 @@ const Resume = () => {
       <div className="bg-white shadow-lg rounded-lg max-w-4xl w-full flex flex-col md:flex-row">
         <div className="p-4 flex flex-col items-center md:w-1/3 bg-gray-800 text-white">
           <img
-            src="file:///C:/Users/AMOS%20ROP/Downloads/WhatsApp%20Image%202024-04-02%20at%2014.21.33%20(1).jpeg"
+            src={uvyne}
             alt="Uvyne Rop"
-            className="rounded-full w-32 h-32 mb-4"
+            className="rounded-lg w-42 h-45 mb-2"
           />
           
           <div className="mb-6 pt-6">
