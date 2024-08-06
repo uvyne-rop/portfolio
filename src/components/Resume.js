@@ -1,16 +1,16 @@
 import React from 'react';
-import uvyne from './assets/uvyne.jpg';
+// import uvyne from './assets/uvyne.jpg';
 
 const Resume = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4">
       <div className="bg-white shadow-lg rounded-lg max-w-4xl w-full flex flex-col md:flex-row">
         <div className="p-4 flex flex-col items-center md:w-1/3 bg-gray-800 text-white">
-          <img
+          {/* <img
             src={uvyne}
             alt="Uvyne Rop"
             className="rounded-lg w-42 h-45 mb-2"
-          />
+          /> */}
           
           <div className="mb-6 pt-6">
             <h2 className="text-xl font-bold border-b-2 border-gray-200 pb-2">SKILLS</h2>
